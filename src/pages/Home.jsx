@@ -1,8 +1,9 @@
 const Home = () => {
     return (
-        <div>
-            <p>Improve or die</p>
-        </div>
+        <>
+            <h1 className="text-[64px]">Improve or die</h1>
+            
+        </>
     );
 };
 

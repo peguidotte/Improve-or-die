@@ -23,13 +23,13 @@ body {
 /* Reset CSS */
 
 * {
-  margin: 5px 10px;
-  padding: 0;
   box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
+  margin: 5px 10px;
+  padding: 0;
 }
 
 img, picture, video, canvas, svg {

@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "title": "Wtf Is This?",
+      "description": "Choose the correct meaning of the word. Every wrong answer trigger Russian Roulette. For every three wrong answers, a bullet is added to the revolver. Good Luck!",
+      "images": "/assets/images/wtf-is-this.png",
+      "gifs": "/assets/animations/wtf-is-this.gif",
+      "component": "WtfIsThis"
+    },
+    {
+      "id": 2,
+      "title": "Example Game",
+      "description": "Descrição do Example Game.",
+      "dica": "Esta é uma dica para o Example Game.",
+      "image": "/assets/images/example-game.png",
+      "animacao": "/assets/animations/example-game.gif",
+      "component": "ExampleGame"
+    }
+]

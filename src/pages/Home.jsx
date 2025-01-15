@@ -1,18 +1,15 @@
-import { Link } from "react-router";
+import GameCards from '../components/GameCards';
+import gamesData from '../data/games.json'
+function Home() {
+    console.log(gamesData);
+    console.log(gamesData.length);
 
-const Home = () => {
-    return (
-        <>
-            <h1 className="text-[64px]">Improve or die</h1>
-            <div>
-                <p>
-                    aqui ficarão os cards dos games
-                </p>
-                <img src="src\assets\games\wtfisthis\gifs\idle.gif" alt="idle face blinking" />
-                <Link to="/tutorial">Quando clicar nos cards abrirá essa página conforme id do jogo</Link>
-            </div>
-        </>
-    );
-};
+  return (
+    <div className="home-container">
+      <h1 className="text-[64px]">Improve or die</h1>
+      <GameCards />
+    </div>
+  );
+}
 
 export default Home;

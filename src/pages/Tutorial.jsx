@@ -1,11 +1,11 @@
-import { Link } from "react-router";
+import { Link, useParams } from "react-router";
 
 const Tutorial = () => {
+
     return (
         <div>
             <Link to="/">Voltar</Link>
-            <p>Tutorial</p>
-            <Link to="/wtfisthis">Jogar WtfIsThis</Link>
+            <p></p>
         </div>
     );
 };

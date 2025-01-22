@@ -14,8 +14,8 @@ const GameCard = ({
   return (
     <Link
       to={{
-        pathname: `/Tutorial/${id}`,
-        state: { id, description, title },
+        pathname: `/tutorial/${id}`,
+        state: { id, description, title }
       }}
       className={`w-[174px] h-[220px] border-t-4 ${
         cardLeft ? "border-l-4 rounded-r-2xl" : "border-r-4 rounded-l-2xl"

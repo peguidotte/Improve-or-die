@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import "./BirdsEasy.css"; // Estilos específicos para animação
-import BirdEasy from "../../assets/global/flyingbird.gif"; // Imagem dos pássaros
+import "./BirdsEasy.css"; 
+import BirdEasy from "../../assets/global/flyingbird.gif"; 
 
 const TOTAL_BIRDS = 6;
 
@@ -22,7 +22,6 @@ const BirdsEasy = ({ difficulty }) => {
     };
   };
 
-  // Inicializar os pássaros
   useEffect(() => {
     if (difficulty === "Easy") {
       const initialBirds = Array.from({ length: TOTAL_BIRDS }, () =>

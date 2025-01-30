@@ -16,7 +16,7 @@ const ThumbsUpMedium = ({ difficulty }) => {
     const rngLeft = Math.floor(Math.random() * 80) + 10; // Posição horizontal entre 10% e 90%
   
     return {
-      id: Math.random().toString(36).substr(2, 9), // ID único
+      id: Math.random().toString(36).substring(2, 9), // ID único
       size: `${rngSize}px`, // Tamanho em pixels
       speed: rngSpeed, // Tempo de animação em segundos
       startDelay: `${rngStartDelay}s`, // Atraso inicial

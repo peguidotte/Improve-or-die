@@ -1,0 +1,29 @@
+.skulls-animation-container {
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    overflow: hidden; 
+  }
+  
+  .skull {
+    position: absolute;
+    animation-name: Appear;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    will-change: transform; /* Otimização para animações */
+  }
+  
+  @keyframes Appear {
+    0% {
+      scale: 0;
+      opacity: 0;
+    }
+    100% {
+      scale: 1;
+      opacity: 1;
+    }
+  }

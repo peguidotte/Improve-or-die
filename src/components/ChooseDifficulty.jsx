@@ -1,12 +1,18 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import AnimationDifficulty from "./Animations/AnimationsDifficulty";
+import { Link } from "react-router";
 
-const ChooseDifficulty = () => {
+const ChooseDifficulty = ({id}) => {
   const [selectedDifficulty, setSelectDifficulty] = useState("Easy");
   const difficulties = [
-    { level: "Easy", subtitle: "Omg, you are horrible" },
-    { level: "Medium", subtitle: "Omg, you are normal" },
-    { level: "Hard", subtitle: "Omg, you... you are horrible too" },
+    { level: "Easy", subtitle: "Not judging... But how old are you?" },
+    { level: "Medium", subtitle: "Ok.. you are a normal person. And Boring." },
+    {
+      level: "Hard",
+      subtitle:
+        "Uuuh... Be careful guys. You are so dangerous! I’m scared, help meeeee",
+    },
   ];
 
   const handleSelect = (difficulty) => {
@@ -41,13 +47,26 @@ const ChooseDifficulty = () => {
         }
       </p>
       <div className="flex justify-center">
-        <button className="bg-black text-white px-12 text-6xl mt-8 text-center">
-          Start
-        </button>
+        <Link
+          to={{
+            pathname: `/game/${id}/${selectedDifficulty}`,
+            state: { id, selectedDifficulty },
+          }}
+        >
+          <button
+            className="bg-black text-white px-12 text-6xl mt-8 text-center"
+            onClick={() => console.log("Start game")}
+          >
+            Start
+          </button>
+        </Link>
       </div>
       <AnimationDifficulty difficulty={selectedDifficulty} />
     </>
   );
+};
+ChooseDifficulty.propTypes = {
+  id: PropTypes.string.isRequired,
 };
 
 export default ChooseDifficulty;

@@ -1,6 +1,7 @@
-import { Link, useParams } from "react-router";
+import { useParams } from "react-router";
 import ChooseDifficult from "../components/ChooseDifficulty";
 import GamesData from "../data/games.json";
+import BackButton from "../components/BackButton";
 
 const Tutorial = () => {
   let { id } = useParams();
@@ -12,7 +13,7 @@ const Tutorial = () => {
       <div className="h-screen overflow-hidden">
         <section>
           <div className="flex justify-between text-4xl pt-2">
-            <Link to="/">&#60;-</Link>
+            <BackButton />
             <h1>{game.title || "Has something wrong!"}</h1>
             <button>c</button>
           </div>
@@ -25,7 +26,7 @@ const Tutorial = () => {
           <button className="">Star</button>
           <div className="w-[10%] h-[2px] bg-black"></div>
         </div>
-        <ChooseDifficult />
+        <ChooseDifficult id={id}/>
       </div>
     </>
   );

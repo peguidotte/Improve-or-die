@@ -1,0 +1,113 @@
+[
+    {
+      "word": "apple",
+      "meanings": {
+        "true": "a common fruit that is round with a firm texture and comes in shades of red, green, or yellow",
+        "false": [
+          "a compact device known for its sleek design and innovation",
+          "a fruit with a soft, juicy flesh typically found in tropical regions",
+          "a pear-shaped fruit often used in desserts"
+        ]
+      }
+    },
+    {
+      "word": "book",
+      "meanings": {
+        "true": "a collection of written or printed pages bound together for reading or study",
+        "false": [
+          "a small publication featuring short articles and notes",
+          "a digital file designed to present interactive content",
+          "a handwritten journal intended for personal reflections"
+        ]
+      }
+    },
+    {
+      "word": "car",
+      "meanings": {
+        "true": "a motorized vehicle with four wheels designed for transporting passengers on roads",
+        "false": [
+          "a two-wheeled vehicle used for quick, short-distance travel",
+          "a compact machine primarily built for off-road activities",
+          "an electric scooter known for its agile maneuvering"
+        ]
+      }
+    },
+    {
+      "word": "dog",
+      "meanings": {
+        "true": "a domesticated mammal kept as a pet, recognized for its loyalty and friendly nature",
+        "false": [
+          "a wild canine typically found in natural, undomesticated settings",
+          "a small mammal noted for its rapid movements and agility",
+          "a farm animal often used for herding other livestock"
+        ]
+      }
+    },
+    {
+      "word": "house",
+      "meanings": {
+        "true": "a building constructed to serve as a dwelling for individuals or families",
+        "false": [
+          "a large commercial structure used for business or storage",
+          "a temporary shelter typically assembled during travel",
+          "a compact building designed primarily for office work"
+        ]
+      }
+    },
+    {
+      "word": "water",
+      "meanings": {
+        "true": "a clear and nearly tasteless liquid essential for life, commonly found in nature",
+        "false": [
+          "a flavored beverage popular for its refreshing qualities",
+          "a viscous liquid often used in industrial processes",
+          "a mineral-rich drink marketed for its health benefits"
+        ]
+      }
+    },
+    {
+      "word": "sun",
+      "meanings": {
+        "true": "the star at the center of our solar system that provides natural light and warmth",
+        "false": [
+          "a luminous object orbiting the Earth and visible at night",
+          "a distant celestial body known for its icy appearance",
+          "a bright moon that reflects the light of other stars"
+        ]
+      }
+    },
+    {
+      "word": "tree",
+      "meanings": {
+        "true": "a perennial plant with a trunk, branches, and leaves, often serving as a source of shade",
+        "false": [
+          "a bushy plant typically characterized by a low, spreading form",
+          "a climbing plant noted for its flexible, vining stems",
+          "a herbaceous plant commonly found in gardens for decorative purposes"
+        ]
+      }
+    },
+    {
+      "word": "chair",
+      "meanings": {
+        "true": "a piece of furniture designed for one person to sit on, usually with a back for support",
+        "false": [
+          "a seating apparatus designed for multiple users arranged around a table",
+          "a low stool without a back, often used in casual settings",
+          "a reclining seat with adjustable features for maximum comfort"
+        ]
+      }
+    },
+    {
+      "word": "table",
+      "meanings": {
+        "true": "a piece of furniture with a flat surface supported by legs, used for dining, working, or display",
+        "false": [
+          "a versatile surface often used for storage or decorative arrangements",
+          "a portable desk designed for use in various outdoor settings",
+          "a compact counter typically found in small residential spaces"
+        ]
+      }
+    }
+  ]
+  

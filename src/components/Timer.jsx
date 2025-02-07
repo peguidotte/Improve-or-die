@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-const Timer = ({ easyTime, mediumTime, hardTime, diff, onTimeOut }) => {
+const Timer = ({ easyTime, mediumTime, hardTime, diff, onTimeOut, paused }) => {
   const initialTime =
     diff === "Easy" ? easyTime : diff === "Medium" ? mediumTime : hardTime;
   const [timeLeft, setTimeLeft] = useState(initialTime);
@@ -11,6 +11,7 @@ const Timer = ({ easyTime, mediumTime, hardTime, diff, onTimeOut }) => {
   }, [initialTime]);
 
   useEffect(() => {
+    if (paused) return;
     if (timeLeft <= 0) {
       onTimeOut();
       return;
@@ -20,7 +21,7 @@ const Timer = ({ easyTime, mediumTime, hardTime, diff, onTimeOut }) => {
     }, 1000);
 
     return () => clearInterval(timerId);
-  }, [timeLeft, onTimeOut]);
+  }, [timeLeft, onTimeOut, paused]);
 
   return <p>{timeLeft}s</p>;
 };
@@ -31,6 +32,7 @@ Timer.propTypes = {
   hardTime: PropTypes.number.isRequired,
   diff: PropTypes.string.isRequired,
   onTimeOut: PropTypes.func.isRequired,
+  paused: PropTypes.bool.isRequired,
 };
 
 export default Timer;
